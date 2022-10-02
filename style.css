@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+/* the decendent selector - it will pick all the p elements in the footer*/
+/* footer p {
+  font-size: 16px;
+} */
+/*  - long decendent selector
+article header p {
+  font-style: italic;
+} */
+/* this # is a selector for IDs */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#footer {
+  font-size: 16px;
+}
+
+/* ID is for one time use only, CLASS is for multiple use */
+.related-autor {
+  font-size: 18px;
+  font-weight: bold;
+  /* # is selector for id, . is a selector for class */
+}
+
+.related-list {
+  list-style: none;
+}

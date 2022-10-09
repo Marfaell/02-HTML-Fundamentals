@@ -1,3 +1,14 @@
+/* * {
+
+} */
+/* this is uniwersal selectior that selects every item on the page */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+}
+
 h1,
 h2,
 h3,
@@ -56,7 +67,7 @@ article header p {
   font-size: 18px;
 }
 
-#footer {
+#copyright {
   font-size: 16px;
 }
 
@@ -126,3 +137,36 @@ a:active {
   font-style: italic;
 }
 /* we always style links in this order */
+
+/* devtools
+!importand is the best but last resort, id is next, class and selector (hierarchy of the values)*/
+
+/* resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
+
+a:link {
+  color: #777;
+  text-decoration: none;
+}
+
+a {
+  color: red;
+} */
+
+nav {
+  font-size: 18px;
+}

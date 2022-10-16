@@ -1,6 +1,8 @@
-/* * {
-
-} */
+* {
+  margin: 0;
+  padding: 0;
+  /* this is called a global reset */
+}
 /* this is uniwersal selectior that selects every item on the page */
 body {
   color: #444;
@@ -33,10 +35,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -48,10 +52,17 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 /* the decendent selector - it will pick all the p elements in the footer*/
 /* footer p {
@@ -84,6 +95,10 @@ article header p {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+  /* box model will show us that whole height of the item is 120px due to padding 20+80+20 */
 }
 
 aside {
@@ -91,18 +106,19 @@ aside {
   border-top: 5px, solid, #1098ad;
   border-bottom: 5px, solid, #1098ad;
   /* this is a special kind of property - shorthand property - we can use one propetry to define few properties */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 500px;
 }
 
 /* .first-li {
   font-weight: bold;
 }  can do it like that manually but there is a better way*/
 /* the pseudo class is activated by : and following with child element */
-li:first-child {
-  font-weight: bold;
-}
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 /* li:nth-child(2) {
@@ -169,4 +185,20 @@ a {
 
 nav {
   font-size: 18px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* we use css to add measurments of html objects */
+.post-image {
+  width: 100%;
+  /* using % to style - it will adjust the image to the parent container that it is in - 100% width gonna be 100% of parent element width */
+  /* using % also allows item to always addapt when the browser window changes size */
+  height: auto;
 }

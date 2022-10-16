@@ -202,3 +202,11 @@ article {
   /* using % also allows item to always addapt when the browser window changes size */
   height: auto;
 }
+
+/* centering your page content - we close everything in box and specify width of the container - 2 add margins to the left and right */
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}

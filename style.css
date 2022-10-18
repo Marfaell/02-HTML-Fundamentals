@@ -97,7 +97,7 @@ article header p {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
   /* box model will show us that whole height of the item is 120px due to padding 20+80+20 */
 }
 
@@ -152,7 +152,21 @@ a:active {
   background-color: black;
   font-style: italic;
 }
-/* we always style links in this order */
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  /* margin: 20px;
+    padding: 20px;
+  /* in that way you can change inline block element to block element */
+  /* display: block; */
+  /* we always style links in this order */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
 
 /* devtools
 !importand is the best but last resort, id is next, class and selector (hierarchy of the values)*/

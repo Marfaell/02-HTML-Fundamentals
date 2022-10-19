@@ -9,6 +9,7 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 h1,
@@ -223,4 +224,17 @@ article {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+}
+/* absolute positioning - declaring items position out of normal flow of things */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  /* due to positioning being absolute to the view point we need to create relative for positioning this - here body is relative */
 }

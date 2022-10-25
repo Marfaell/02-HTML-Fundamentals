@@ -238,3 +238,38 @@ button {
 
   /* due to positioning being absolute to the view point we need to create relative for positioning this - here body is relative */
 }
+
+/* pseudo elements don't exist in html but we can still style them in CSS )fist letters, in element type of thing*/
+/* pseduo element is activeted by using :: */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* + is adjecent sibiling selector (adjecent sibling is the next one in the element) */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* before and after pseudoelements
+
+After pseudoelement created the very last child of the selected element*/
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  /* always need to define content property - even with empty "" */
+  background-color: yellow;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  /* all the pseudo elemenents are in line elements */
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}

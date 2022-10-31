@@ -297,3 +297,15 @@ h1 {
 nav {
   float: right;
 }
+/* not a best way but the easiest to clear floats (so the container is not colapsed  */
+/* .clear {
+  clear: both;
+} */
+
+/* the clear fix  hack */
+.clearfix::after {
+  /* this will insert new element */
+  clear: both;
+  content: "";
+  display: block;
+}

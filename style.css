@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   /* this is called a global reset */
+  box-sizing: border-box;
+  /* this is placed here so it is applied to all items */
 }
 /* this is uniwersal selectior that selects every item on the page */
 body {
@@ -92,6 +94,7 @@ article header p {
 
 .related-list {
   list-style: none;
+  margin-left: 0;
 }
 
 .main-header {
@@ -107,15 +110,14 @@ aside {
   border-top: 5px, solid, #1098ad;
   border-bottom: 5px, solid, #1098ad;
   /* this is a special kind of property - shorthand property - we can use one propetry to define few properties */
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 500px;
+  padding: 50px 40px;
+  /* BOX-SIZING: BORDER-BOX - a way to keep box excactly one size no matter paddings ect*/
 }
 
 /* .first-li {
   font-weight: bold;
 }  can do it like that manually but there is a better way*/
-/* the pseudo class is activated by : and following with child element */
+/* the pseudo class is activat ed by : and following with child element */
 
 li:last-child {
   font-style: italic;

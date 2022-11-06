@@ -109,7 +109,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px, solid, #1098ad;
   border-bottom: 5px, solid, #1098ad;
-  /* this is a special kind of property - shorthand property - we can use one propetry to define few properties */
+  /* this is a special kind of property - shorthand property - we can use one element to define few properties */
   padding: 50px 40px;
   /* BOX-SIZING: BORDER-BOX - a way to keep box excactly one size no matter paddings ect*/
 }
@@ -117,7 +117,7 @@ aside {
 /* .first-li {
   font-weight: bold;
 }  can do it like that manually but there is a better way*/
-/* the pseudo class is activat ed by : and following with child element */
+/* the pseudo class is activated by : and following with child element */
 
 li:last-child {
   font-style: italic;

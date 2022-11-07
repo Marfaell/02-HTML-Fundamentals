@@ -158,7 +158,7 @@ a:active {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
+
   display: inline-block;
   /* margin: 20px;
     padding: 20px;
@@ -279,49 +279,104 @@ h2::after {
 
 /* LAYOUTS */
 /* Float - used in old code, can come accross it, don't use if not needed */
+/* 
+.author { */
+/* padding-left: 80px; */
+/* margin-left: 20px;
+  margin-top: 10px; */
+/* float: left; */
+/* } */
 
-.author {
-  /* padding-left: 80px; */
-  margin-left: 20px;
-  margin-top: 10px;
-  float: left;
-}
-
-.Laura-img {
+/* .Laura-img {
   float: left;
   margin-bottom: 10px;
-}
+} */
 
-h1 {
+/* h1 {
   float: left;
 }
 
 nav {
   float: right;
-}
+} */
 /* not a best way but the easiest to clear floats (so the container is not colapsed  */
 /* .clear {
   clear: both;
 } */
 
 /* the clear fix  hack */
-.clearfix::after {
-  /* this will insert new element */
-  clear: both;
+/* .clearfix::after { */
+/* this will insert new element */
+/* clear: both;
   content: "";
+  display: block;
+} */
+
+/* article {
+  width: 825px;
+  float: left;
+} */
+
+/* aside {
+  width: 300px;
+  float: right;
+} */
+
+/* footer {
+  clear: both;
+} */
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* here we are going to reset some of previous code as it is not desired look */
+.autor-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
   display: block;
 }
 
+.related-autor {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
 article {
-  width: 825px;
-  float: left;
+  flex: 1;
+  margin-bottom: 0;
 }
 
 aside {
-  width: 300px;
-  float: right;
-}
-
-footer {
-  clear: both;
+  flex: 0 0 300px;
 }
